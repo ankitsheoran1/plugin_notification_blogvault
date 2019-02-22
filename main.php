@@ -62,9 +62,9 @@ function fx_admin_notice()
                               <div class= "text-content",bgcolor= "orange">
                                  <h4>Welcome in Blogvault . World's most trusted backup plugin</h4>
                                     <span id= 'close' onclick= 'this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'><button type="button">Next!</button></span>
-                        </div>
+                              </div>
+                       </div>
               </div>
-         </div>
 
  <!  For second notification >
 
