@@ -52,16 +52,16 @@ function fx_admin_notice()
   if(get_transient( 'fx-admin-notice' ))
       {
 	?>
-        <div class="updated notice is-dismissible">
+        <div class= "updated notice is-dismissible">
            <p>Thank you for using this plugin! <strong>You are awesome</strong>.</p>
         </div>
-              <div class="tooltip">
-                   <button type="button" ><h3>Premium Extension</h3> </button>
-                       <div class="right">
-                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXJ4j46JG75ETc_o_smrUOW84MU9hg_3UArgHAsKMTYojxidRLQ" />
-                              <div class="text-content",bgcolor="orange">
+              <div class= "tooltip">
+                   <button type= "button" ><h3>Premium Extension</h3> </button>
+                       <div class= "right">
+                           <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXJ4j46JG75ETc_o_smrUOW84MU9hg_3UArgHAsKMTYojxidRLQ" />
+                              <div class= "text-content",bgcolor= "orange">
                                  <h4>Welcome in Blogvault . World's most trusted backup plugin</h4>
-                                    <span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'><button type="button">Next!</button></span>
+                                    <span id= 'close' onclick= 'this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'><button type="button">Next!</button></span>
                         </div>
               </div>
          </div>
@@ -72,14 +72,13 @@ function fx_admin_notice()
               <tr>
                  <td colspan = "2" bgcolor = "white">
                      <h4>There are more feature available in upgraded version of Blogvault_main</h4>
-                        <div class="box">
-	                    <a class="button" href="https://blogvault.net">Upgrade</a>  <a class="button" href="www.google.com">Close</a>
+                        <div class= "box">
+	                    <a class= "button" href= "https://blogvault.net">Upgrade</a>  <a class= "button" href= "www.google.com">Close</a>
                         </div>                          
                   </td>
                </tr>
           </table>
-
-         <?php
+     <?php
         delete_transient( 'fx-admin-notice' );
      }
 }
@@ -107,9 +106,9 @@ function general_admin_notice()
     if ( $pagenow == 'plugins.php' ) 
      {
        ?>
-         <div class="notice notice-warning is-dismissible" style="background-color:Green;color:white;padding:20px;">
+         <div class= "notice notice-warning is-dismissible" style= "background-color:Green;color:white;padding:20px;">
              <p ><strong>Alert :</strong>Someone try for illegal access</p>
-                 <button onclick="https://blogvault.net"><h5>Check Status</h5></button>
+                 <button onclick= "https://blogvault.net"><h5>Check Status</h5></button>
          </div>
        
 
@@ -121,7 +120,7 @@ add_action('admin_notices', 'general_admin_notice');
 // Add Plugin in plugin-menu bar  
 function add_my_custom_menu()
 {
-  add_menu_page("lucky1" ,"blogvault_main","manage_options", "lucky-plugin",  "lucky_new_function");
+  add_menu_page("lucky1" ,"blogvault_main", "manage_options", "lucky-plugin",  "lucky_new_function");
 }
 add_action("admin_menu", "add_my_custom_menu");
 
