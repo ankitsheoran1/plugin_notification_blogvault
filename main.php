@@ -110,9 +110,7 @@ function general_admin_notice()
              <p ><strong>Alert :</strong>Someone try for illegal access</p>
                  <button onclick= "https://blogvault.net"><h5>Check Status</h5></button>
          </div>
-       
-
-     <?php
+      <?php
     }
 }
 add_action('admin_notices', 'general_admin_notice');
